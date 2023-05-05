@@ -40,7 +40,7 @@ for i in range(start):
     
 
 
-    line = "{vidId},{title},{date},{plays}\n".format(vidId=ids[i], title=titles[i], date=dates[i], plays=views[i])
+    line = '{vidId},"{title}","{date}",{plays}\n'.format(vidId=ids[i], title=titles[i], date=dates[i], plays=views[i])
     csvFile.write(line)
     offset -= 1
 
